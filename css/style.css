@@ -1,0 +1,878 @@
+:root {
+    --black: #191919;
+    --gray: #787878;
+    --grey: #bfbfbf;
+    --light-blue: #10c9c3;
+    --light-blue-85: rgba(16, 201, 195, 0.85);
+    --white: #ffffff;
+    --light-gray-bg: #f5f5f5;
+    --black-85: rgba(37, 37, 37, 0.85);
+    --black-95: rgba(37, 37, 37, 0.95);
+    --black-bg-color: rgba(12, 12, 12, 0.7);
+
+
+    -ff-montserrat: 'Montserrat', sans-serif;
+    -ff-nunito-sans: 'Nunito Sans', sans-serif;
+}
+
+/* BASE STYLES */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    line-height: 1;
+}
+
+ol,
+ul {
+    margin-bottom: 0;
+    line-height: 1;
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+p {
+    line-height: 1;
+    margin-bottom: 0;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+body {
+    font-family: 'Montserrat';
+    min-width: 310px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* HEADER */
+
+.header {
+    background-color: var(--black-bg-color);
+    height: 570px;
+    position: relative;
+}
+
+.header-contact {
+    height: fit-content;
+}
+
+.header__bg {
+    background: url(../img/header-bg.jpg) no-repeat center / cover fixed;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.header__bg-about {
+    background: url(../img/header-about-me.jpg) no-repeat center / cover fixed;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.header__bg-services {
+    background: url(../img/header-services.jpg) no-repeat center / cover fixed;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.header-services {
+    height: 520px;
+}
+
+.logo-img {
+    width: 31px;
+    height: 38px;
+}
+
+.navbar-logo {
+    padding: 0;
+    margin: 0;
+    z-index: 100;
+}
+
+.nav {
+    padding: 35px;
+}
+
+.nav-link {
+    padding: 6px 15px;
+    margin: 0;
+    color: var(--grey);
+    font-size: 13px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.nav-link:hover {
+    color: var(--white);
+}
+
+.nav-link:focus {
+    color: var(--light-blue);
+}
+
+.header__title {
+    color: var(--white);
+    font-size: 38px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.header__text {
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--grey);
+    line-height: 28px;
+    padding-bottom: 30px;
+}
+
+.header__link {
+    color: var(--white);
+    padding: 22px 45px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: var(--light-blue);
+    display: inline-block;
+    transition: 0.3s;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.header__link:hover {
+    background: var(--black);
+    color: var(--white);
+}
+
+.bars-icon {
+    color: var(--white);
+}
+
+.nav-item {
+    width: fit-content;
+}
+
+.nav-toggler {
+    z-index: 100;
+}
+
+.nav-toggler:focus {
+    box-shadow: none;
+}
+
+.nav-link-active {
+    color: var(--light-blue);
+}
+
+.header-home {
+    background: url(../img/bg-home.jpg) no-repeat center / cover fixed;
+    height: 100vh;
+}
+
+.nav-collapse-home {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav-list-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: var(--black-95);
+    padding-top: 30px;
+}
+
+.nav-link-home {
+    padding: 10px 15px;
+}
+
+.bars-icon-home {
+    color: var(--black);
+}
+
+.nav-link-services {
+    padding: 10px 15px;
+}
+
+.nav-collapse-services {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav-list-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 520px;
+    background: var(--black-95);
+    padding-top: 30px;
+}
+
+.nav-collapse-contact {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav-list-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    background: var(--black-95);
+    padding-top: 30px;
+}
+
+.nav-link-contact {
+    padding: 10px 15px;
+}
+
+.nav-contact {
+    background: var(--white);
+}
+
+.bars-icon-contact {
+    color: var(--black);
+}
+
+.header__title_modify {
+    color: var(--black);
+    width: 50%;
+}
+
+.header__text_modify {
+    color: var(--gray);
+    margin: 0;
+    width: 50%;
+    font-size: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--grey);
+    line-height: 28px;
+    padding-bottom: 30px;
+}
+
+.header-about {
+    height: 500px;
+}
+
+.nav-collapse-about {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.nav-list-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    background: var(--black-95);
+    padding-top: 30px;
+}
+
+.nav-link-about {
+    padding: 10px 15px;
+}
+
+/* MAIN */
+
+
+.about-us {
+    padding: 100px 0;
+}
+
+.about-us__title {
+    color: var(--black);
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+
+.about-us__text {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    color: var(--gray);
+    line-height: 28px;
+    padding-bottom: 30px;
+}
+
+.skills {
+    background: #f8f9f9;
+}
+
+.skills__title {
+    color: var(--black);
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 40px;
+}
+
+.skills__subtitle {
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+.skills-progress {
+    background: #d8d8d8;
+    height: 3px;
+    max-width: 600px;
+    width: 100%;
+    margin: 20px 0 35px;
+}
+
+.skills-progress-bar {
+    background: var(--light-blue);
+}
+
+.skills__img-block {
+    width: 100%;
+}
+
+.skills__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about {
+    background: var(--light-blue);
+    padding: 100px 0;
+}
+
+.about-icon {
+    color: var(--white);
+    font-size: 25px;
+    margin-right: 25px;
+}
+
+.about-text {
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.about-info .about-text:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.works-link {
+    display: inline-block;
+    width: 25%;
+    position: relative;
+}
+
+.works-image {
+    width: 100%;
+    object-fit: cover;
+    max-height: 374px;
+    height: 100%;
+}
+
+.worksimage {
+    width: 100%;
+}
+
+.works-hover-effect {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.works-link:hover .works-hover-effect {
+    opacity: 1;
+    background: var(--light-blue-85);
+}
+
+.modal {
+    background: var(--black-85);
+}
+
+.modal-dialog {
+    max-width: 650px;
+}
+
+.works-more {
+    color: #8e8e8e;
+    background: var(--light-gray-bg);
+    font-size: 14px;
+    font-weight: 500;
+    display: inline-block;
+    padding: 45px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.works-more:hover {
+    color: var(--black);
+}
+
+.process {
+    padding: 100px 0;
+}
+
+.process__title {
+    color: var(--black);
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 40px;
+}
+
+.process__text {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    color: var(--gray);
+    line-height: 28px;
+    padding-bottom: 40px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.process__video {
+    width: 100%;
+}
+
+.services {
+    padding: 70px 0;
+    background: var(--light-gray-bg);
+}
+
+.services i {
+    font-size: 30px;
+    color: var(--gray);
+}
+
+.services-title {
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 30px 0 20px;
+}
+
+.services-text {
+    color: var(--gray);
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 22px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.services-card {
+    padding: 30px 0;
+}
+
+.testimonials {
+    background: var(--light-blue);
+    padding: 60px 0;
+    height: 500px;
+}
+
+.testimonials .container {
+    height: 100%;
+}
+
+.testimonials-slider {
+    height: 100%;
+}
+
+.testimonials-text {
+    font-size: 24px;
+    color: var(--white);
+    font-weight: 500;
+    line-height: 36px;
+    padding-bottom: 40px;
+}
+
+.testimonials-author {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+.companies {
+    padding: 70px 0;
+}
+
+.companies-img {
+    padding: 30px 30px;
+}
+
+.contact {
+    padding: 100px 0;
+    background: var(--light-gray-bg);
+}
+
+.contact__title {
+    font-size: 30px;
+    color: var(--black);
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+.contact__text {
+    color: var(--gray);
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 24px;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 0 25px;
+}
+
+.contact-input {
+    color: var(--gray);
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 20px;
+    width: 50%;
+    margin: 15px 0;
+    outline: none;
+    border: none;
+}
+
+.form-inputs .contact-input:not(:last-child) {
+    margin-right: 30px;
+}
+
+.contact-textarea {
+    resize: none;
+    color: var(--gray);
+    font-family: 'Nunito Sans', sans-serif;
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 20px;
+    margin: 15px 0;
+    outline: none;
+    border: none;
+}
+
+.contact-textarea_size {
+    padding: 20px;
+    height: 160px;
+}
+
+.contact-button {
+    margin: 15px auto 0;
+    color: var(--white);
+    background: var(--light-blue);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;
+    display: inline-block;
+    padding: 22px 0;
+    width: 200px;
+    border: none;
+    transition: 0.3s;
+}
+
+.contact-button:hover {
+    background: var(--black);
+    color: var(--white);
+}
+
+.info {
+    padding: 70px 0;
+    height: 300px;
+}
+
+.info__link {
+    border: none !important;
+    transition: 0.2s;
+    font-size: 15px;
+}
+
+.info__link:hover {
+    color: #464a4c;
+}
+
+.nav-tabs {
+    border: none;
+}
+
+.info__text {
+    font-size: 14px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--gray);
+    line-height: 28px;
+}
+
+.nav-tabs .nav-link.active {
+    color: #191919;
+}
+
+.info .nav {
+    padding: 0 0 30px !important;
+}
+
+.aboutMe {
+    background: var(--light-gray-bg);
+}
+
+.aboutMe__imgBlock {
+    width: 100%;
+}
+
+.aboutMe__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.aboutMe__info {
+    margin: 0 auto;
+}
+
+.aboutMe__title {
+    color: var(--black);
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.aboutMe__text {
+    color: var(--gray);
+    font-size: 16px;
+    padding-top: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 28px;
+}
+
+.aboutMe__signature {
+    width: fit-content;
+    margin: 40px auto;
+}
+
+.question {
+    padding: 100px 0;
+}
+
+.question__title {
+    color: var(--black);
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.question__text {
+    color: var(--gray);
+    font-size: 16px;
+    padding-top: 20px;
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 28px;  
+}
+
+.question__link {
+    color: var(--white);
+    padding: 22px 45px;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background: var(--light-blue);
+    display: inline-block;
+    transition: 0.3s;
+    width: fit-content;
+    margin: 30px auto 0;
+}
+
+.question__link:hover {
+    background: var(--black);
+    color: var(--white);
+}
+
+.companies-services {
+    background: var(--light-gray-bg);
+}
+
+.feedback {
+    background: var(--light-gray-bg);
+    padding: 100px 0;
+}
+
+.feedback__title {
+    font-size: 30px;
+    color: var(--black);
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+
+.feedback__text {
+    color: var(--gray);
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 24px;
+    margin: 0;
+    padding: 15px 0 25px;
+}
+
+.feedback__text span {
+    font-weight: 700;
+    color: var(--black);
+}
+
+.contact-input_margin {
+    margin: 0 0 15px;
+}
+
+.contact-button_margin {
+    margin: 15px 0 0;
+}
+
+/* .map iframe {
+    margin-bottom: -7px;
+} */
+
+
+/* FOOTER */
+
+.footer {
+    padding: 100px 0;
+    background: var(--black);
+}
+
+.footer-home {
+    background-color: var(--white);
+}
+
+.footer-text {
+    font-size: 500px;
+    font-size: 18px;
+    color: var(--white);
+}
+
+.footer-text-home {
+    color: var(--black);
+}
+
+.footer-text_color {
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--grey);
+    font-size: 15px;
+}
+
+.footer-info .footer-text:not(:last-child) {
+    padding-bottom: 30px;
+}
+
+.footer a:hover {
+    color: var(--white);
+}
+
+.footer-email {
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--grey);
+    font-size: 16px;
+    margin-bottom: 15px;
+    transition: 0.2s;
+}
+
+.footer-email-home {
+    color: var(--black);
+}
+
+.footer-phone {
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--grey);
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.footer-phone-home {
+    color: var(--black);
+}
+
+.footer-links .footer-list:not(:last-child) {
+    margin-right: 60px;
+}
+
+.footer-list {
+    line-height: 24px;
+}
+
+.footer-link {
+    font-family: 'Nunito Sans', sans-serif;
+    color: var(--grey);
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.footer-link-home {
+    color: var(--black);
+}
+
+.footer-home a:hover {
+    color: var(--light-blue);
+}

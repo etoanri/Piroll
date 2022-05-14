@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piroll</title>
+    <!-- libs -->
+    <link rel="stylesheet" href="libs/bootstrap-5.1.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/fontawesome-free-6.1.1-web/css/all.min.css">
+    <!-- styles -->
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="icon" href="img/logo-light.svg">
+</head>
+
+<body>
+
+    <header class="header d-flex flex-column">
+    <div class="header__bg"></div>
+        <nav class="navbar navbar-expand-lg nav">
+            <div class="container-fluid container">
+                <a class="navbar-brand navbar-logo" href="index.html">
+                    <img src="img/logo-light.svg" alt="" class="logo-img">
+                </a>
+                <button class="navbar-toggler nav-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars bars-icon"></i>
+                </button>
+                <div class="collapse navbar-collapse nav-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-list ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item nav-item">
+                            <a class="nav-link nav-link" href="pages/home.html">home</a>
+                        </li>
+                        <li class="nav-item nav-item">
+                            <a class="nav-link nav-link" href="pages/about.html">about</a>
+                        </li>
+                        <li class="nav-item nav-item">
+                            <a class="nav-link nav-link" href="pages/work.html" tabindex="-1" aria-disabled="true">work</a>
+                        </li>
+                        <li class="nav-item nav-item">
+                            <a class="nav-link nav-link" href="#process" tabindex="-1" aria-disabled="true">process</a>
+                        </li>
+                        <li class="nav-item nav-item">
+                            <a class="nav-link nav-link" href="pages/services.html" tabindex="-1" aria-disabled="true">services</a>
+                        </li>
+                        <li class="nav-item nav-item">
+                            <a class="nav-link nav-link" href="#testimonials" tabindex="-1"
+                                aria-disabled="true">testimonials</a>
+                        </li>
+                        <li class="nav-item nav__item">
+                            <a class="nav-link nav-link" href="pages/contact.html" tabindex="-1" aria-disabled="true">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="header__content flex-grow-1 d-flex align-items-center text-center justify-content-center">
+            <div class="container">
+                <h1 class="header__title">
+                    We Design and Develop
+                </h1>
+                <p class="header__text">
+                    We are a new design studio based in USA. We have over
+                    20 years of combined experience, and know a thing or two
+                    about designing websites and mobile apps.
+                </p>
+                <a href="pages/contact.html#feedback" class="header__link">
+                    contact us
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="about-us">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-8 text-center">
+                        <h2 class="about-us__title">
+                            About Us
+                        </h2>
+                        <p class="about-us__text">
+                            Divide have don't man wherein air fourth. Own itself make have night won't make.
+                            A you under Seed appear which good give. Own give air without fowl moveth dry first
+                            heaven fruit, dominion she'd won't very all.
+                        </p>
+                        <img src="img/signature.png" alt="" class="about-us__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills d-flex">
+            <div class="container d-flex flex-column justify-content-center align-items-center">
+                <h2 class="skills__title">
+                    Professional Skills
+                </h2>
+                <h3 class="skills__subtitle">
+                    UI/UX Design 75%
+                </h3>
+                <div class="progress skills-progress">
+                    <div class="progress-bar skills-progress-bar" role="progressbar" style="width: 75%"
+                        aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h3 class="skills__subtitle">
+                    web development 90%
+                </h3>
+                <div class="progress skills-progress">
+                    <div class="progress-bar skills-progress-bar" role="progressbar" style="width: 90%"
+                        aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <h3 class="skills__subtitle">
+                    marketing 65%
+                </h3>
+                <div class="progress skills-progress">
+                    <div class="progress-bar skills-progress-bar" role="progressbar" style="width: 65%"
+                        aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <div class="skills__img-block">
+                <img class="skills__img" src="img/about-us.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <div class="row about-row">
+                    <div class="col-sm-6 col-lg-3 d-flex align-items-center about-block">
+                        <i class="fa-solid fa-suitcase about-icon"></i>
+                        <div class="about-info d-flex flex-column">
+                            <p class="about-text">
+                                548
+                            </p>
+                            <p class="about-text">
+                                projects completed
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 d-flex align-items-center about-block">
+                        <i class="fa-solid fa-clock about-icon"></i>
+                        <div class="about-info d-flex flex-column">
+                            <p class="about-text">
+                                1465
+                            </p>
+                            <p class="about-text">
+                                working hours
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 d-flex align-items-center about-block">
+                        <i class="fa-solid fa-star about-icon"></i>
+                        <div class="about-info d-flex flex-column">
+                            <p class="about-text">
+                                612
+                            </p>
+                            <p class="about-text">
+                                POSITIVE FEEDBACKS
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-3 d-flex align-items-center about-block">
+                        <i class="fa-solid fa-heart about-icon"></i>
+                        <div class="about-info d-flex flex-column">
+                            <p class="about-text">
+                                735
+                            </p>
+                            <p class="about-text">
+                                HAPPY CLIENTS
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="works">
+            <div class="d-flex flex-wrap">
+                <a href="#!" class="works-link" data-bs-toggle="modal" data-bs-target="#exampleModal-1">
+                    <div class="works-hover-effect">
+                        <img src="img/hover-eye.png" alt="">
+                    </div>
+                    <img src="img/portfolio-work-9.jpg" alt="" class="works-image">
+                </a>
+                <div class="modal fade" id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-body">
+                            <img src="img/portfolio-work-9.jpg" alt="" class="works-image">
+                        </div>
+                    </div>
+                </div>
+                <a href="#!" class="works-link" data-bs-toggle="modal" data-bs-target="#exampleModal-2">
+                    <div class="works-hover-effect">
+                        <img src="img/hover-eye.png" alt="">
+                    </div>
+                    <img src="img/portfolio-work-2.jpg" alt="" class="works-image">
+                </a>
+                <div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-body">
+                            <img src="img/portfolio-work-2.jpg" alt="" class="works-image">
+                        </div>
+                    </div>
+                </div>
+                <a href="#!" class="works-link" data-bs-toggle="modal" data-bs-target="#exampleModal-3">
+                    <div class="works-hover-effect">
+                        <img src="img/hover-eye.png" alt="">
+                    </div>
+                    <img src="img/portfolio-work-3.jpg" alt="" class="works-image">
+                </a>
+                <div class="modal fade" id="exampleModal-3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-body">
+                            <img src="img/portfolio-work-3.jpg" alt="" class="works-image">
+                        </div>
+                    </div>
+                </div>
+                <a href="#!" class="works-link" data-bs-toggle="modal" data-bs-target="#exampleModal-4">
+                    <div class="works-hover-effect">
+                        <img src="img/hover-eye.png" alt="">
+                    </div>
+                    <img src="img/portfolio-work-4.jpg" alt="" class="works-image">
+                </a>
+                <div class="modal fade" id="exampleModal-4" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-body">
+                            <img src="img/portfolio-work-4.jpg" alt="" class="works-image">
+                        </div>
+                    </div>
+                </div>
+                <a href="#!" class="works-link" data-bs-toggle="modal" data-bs-target="#exampleModal-5">
+                    <div class="works-hover-effect">
+                        <img src="img/hover-eye.png" alt="">
+                    </div>
+                    <img src="img/portfolio-work-5.jpg" alt="" class="works-image">
+                </a>
+                <div class="modal fade" id="exampleModal-5" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-body">
+                            <img src="img/portfolio-work-5.jpg" alt="" class="works-image">
+                        </div>
+                    </div>
+                </div>
+                <a href="#!" class="works-link" data-bs-toggle="modal" data-bs-target="#exampleModal-6">
+                    <div class="works-hover-effect">
+                        <img src="img/hover-eye.png" alt="">
+                    </div>
+                    <img src="img/portfolio-work-6.jpg" alt="" class="works-image">
+                </a>
+                <div class="modal fade" id="exampleModal-6" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-body">
+                            <img src="img/portfolio-work-6.jpg" alt="" class="works-image">
+                        </div>
+                    </div>
+                </div>
+                <a href="#!" class="works-link" data-bs-toggle="modal" data-bs-target="#exampleModal-7">
+                    <div class="works-hover-effect">
+                        <img src="img/hover-eye.png" alt="">
+                    </div>
+                    <img src="img/portfolio-work-7.jpg" alt="" class="works-image">
+                </a>
+                <div class="modal fade" id="exampleModal-7" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-body">
+                            <img src="img/portfolio-work-7.jpg" alt="" class="works-image">
+                        </div>
+                    </div>
+                </div>
+                <a href="#!" class="works-link" data-bs-toggle="modal" data-bs-target="#exampleModal-8">
+                    <div class="works-hover-effect">
+                        <img src="img/hover-eye.png" alt="">
+                    </div>
+                    <img src="img/portfolio-work-8.jpg" alt="" class="works-image">
+                </a>
+                <div class="modal fade" id="exampleModal-8" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-body">
+                            <img src="img/portfolio-work-8.jpg" alt="" class="works-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="pages/home.html#more" class="works-more">
+                load more work
+            </a>
+        </section>
+
+        <section class="process" id="process">
+            <div class="container">
+                <h2 class="process__title text-center">
+                    Our Work Process
+                </h2>
+                <p class="process__text text-center">
+                    Was years it seasons was there form he in in them together over that,
+                    third sixth gathered female creeping bearing behold years.
+                </p>
+                <video controls class="process__video" src="video/video.mp4"></video>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3 text-center services-card">
+                        <i class="fa-solid fa-gem"></i>
+                        <h3 class="services-title">
+                            ui / ux design
+                        </h3>
+                        <p class="services-text">
+                            Be set fourth land god darkness
+                            make it wherein own
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center services-card">
+                        <i class="fa-solid fa-code"></i>
+                        <h3 class="services-title">
+                            web development
+                        </h3>
+                        <p class="services-text">
+                            A she'd them bring void moving
+                            third she'd kind fill
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center services-card">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                        <h3 class="services-title">
+                            app / mobile
+                        </h3>
+                        <p class="services-text">
+                            Dominion man second spirit he,
+                            earth they're creeping
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center services-card">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <h3 class="services-title">
+                            game design
+                        </h3>
+                        <p class="services-text">
+                            Morning his saying moveth it
+                            multiply appear life be
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center services-card">
+                        <i class="fa-solid fa-plane"></i>
+                        <h3 class="services-title">
+                            SEO / marketing
+                        </h3>
+                        <p class="services-text">
+                            Give won't after land fill creeping
+                            meat you, may
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center services-card">
+                        <i class="fa-solid fa-star"></i>
+                        <h3 class="services-title">
+                            photography
+                        </h3>
+                        <p class="services-text">
+                            Creepeth one seas cattle grass
+                            give moving saw give
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center services-card">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        <h3 class="services-title">
+                            graphic design
+                        </h3>
+                        <p class="services-text">
+                            Open, great whales air rule for,
+                            fourth life whales
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-3 text-center services-card">
+                        <i class="fa-solid fa-fill-drip"></i>
+                        <h3 class="services-title">
+                            illustrations
+                        </h3>
+                        <p class="services-text">
+                            Whales likeness hath, man kind
+                            for them air two won't
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <div id="carouselExampleIndicators" class="carousel slide testimonials-slider d-flex flex-column"
+                    data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="testimonials-button active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            class="testimonials-button" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            class="testimonials-button" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner text-center flex-grow-1 d-flex align-items-center">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <p class="testimonials-text">
+                                “Outstanding job and exceeded all expectations. It was a pleasure
+                                to work with them on a sizable first project and am looking
+                                forward to start the next one asap.”
+                            </p>
+                            <p class="testimonials-author">
+                                Michael Hopkins
+                            </p>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <p class="testimonials-text">
+                                “Outstanding job and exceeded all expectations. It was a pleasure
+                                to work with them on a sizable first project and am looking
+                                forward to start the next one asap.”
+                            </p>
+                            <p class="testimonials-author">
+                                Michael Hopkins
+                            </p>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="5000">
+                            <p class="testimonials-text">
+                                “Outstanding job and exceeded all expectations. It was a pleasure
+                                to work with them on a sizable first project and am looking
+                                forward to start the next one asap.”
+                            </p>
+                            <p class="testimonials-author">
+                                Michael Hopkins
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="companies">
+            <div class="container d-flex justify-content-around flex-wrap">
+                <img class="companies-img" src="img/company-icon-1.png" alt="">
+                <img class="companies-img" src="img/company-icon-2.png" alt="">
+                <img class="companies-img" src="img/company-icon-3.png" alt="">
+                <img class="companies-img" src="img/company-icon-4.png" alt="">
+                <img class="companies-img" src="img/company-icon-5.png" alt="">
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h2 class="contact__title text-center">
+                            Need a Project?
+                        </h2>
+                        <p class="contact__text text-center">
+                            Let us know what you're looking for in an agency. We'll take a look and see
+                            if this could be the start of something beautiful.
+                        </p>
+                        <form class="form d-flex flex-column">
+                            <div class="form-inputs d-flex justify-content-between">
+                                <input type="text" class="contact-input" placeholder="Your Name" required>
+                                <input type="email" class="contact-input" placeholder="Your Email" required>
+                            </div>
+                            <textarea class="contact-textarea" placeholder="Your Title"></textarea>
+                            <textarea class="contact-textarea contact-textarea_size"
+                                placeholder="Your Comment"></textarea>
+                            <button class="contact-button" type="submit">
+                                send message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container d-flex justify-content-between flex-wrap-reverse">
+            <div class="footer-info">
+                <p class="footer-text">
+                    Piroll Design, Inc.
+                </p>
+                <p class="footer-text footer-text_color">
+                    All rights reserved.
+                    Designed by robirurk.
+                </p>
+            </div>
+            <div class="footer-contacts d-flex flex-column">
+                <a href="mailto:hello@pirolltheme.com" class="footer-email">
+                    hello@pirolltheme.com
+                </a>
+                <a href="tel:+44987065908 " class="footer-phone">
+                    +44 987 065 908
+                </a>
+            </div>
+            <div class="footer-links d-flex">
+                <ul class="footer-list">
+                    <li><a href="#!" class="footer-link">Projects</a></li>
+                    <li><a href="#!" class="footer-link">About</a></li>
+                    <li><a href="#!" class="footer-link">Services</a></li>
+                    <li><a href="#!" class="footer-link">Carreer</a></li>
+                </ul>
+                <ul class="footer-list">
+                    <li><a href="#!" class="footer-link">News</a></li>
+                    <li><a href="#!" class="footer-link">Events</a></li>
+                    <li><a href="#!" class="footer-link">Contact</a></li>
+                    <li><a href="#!" class="footer-link">Legals</a></li>
+                </ul>
+                <ul class="footer-list">
+                    <li><a href="#!" class="footer-link">Facebook</a></li>
+                    <li><a href="#!" class="footer-link">Twitter</a></li>
+                    <li><a href="#!" class="footer-link">Instagram</a></li>
+                    <li><a href="#!" class="footer-link">Dribbble</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="libs/bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

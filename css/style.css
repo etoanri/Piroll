@@ -82,7 +82,7 @@ body {
 }
 
 .header__bg {
-    background: url(../img/header-bg.jpg) no-repeat center / cover fixed;
+    background: url(../img/header-bg.jpg) no-repeat center / cover;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -92,7 +92,7 @@ body {
 }
 
 .header__bg-about {
-    background: url(../img/header-about-me.jpg) no-repeat center / cover fixed;
+    background: url(../img/header-about-me.jpg) no-repeat center / cover;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -102,7 +102,7 @@ body {
 }
 
 .header__bg-services {
-    background: url(../img/header-services.jpg) no-repeat center / cover fixed;
+    background: url(../img/header-services.jpg) no-repeat center / cover;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -204,7 +204,7 @@ body {
 }
 
 .header-home {
-    background: url(../img/bg-home.jpg) no-repeat center / cover fixed;
+    background: url(../img/bg-home.jpg) no-repeat center / cover;
     height: 100vh;
 }
 

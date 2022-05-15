@@ -54,13 +54,37 @@
         flex-wrap: wrap;
     }
 
+    .works {
+        flex-wrap: wrap;
+    }
+
     .aboutMe__title {
         text-align: center;
         padding: 40px 0 10px;
+    } 
+
+    .works__title {
+        text-align: center;
+        padding: 40px 0 30px;
     }
 
     .aboutMe__text {
         text-align: center;
+    }
+
+    .works__text {
+        text-align: center;
+        padding: 0 0 30px;
+    }
+
+    .work__text_padding {
+        padding: 0px 0 20px;
+    }
+    
+    
+    .works__text span {
+        color: var(--black);
+        font-weight: 700;
     }
 
     .aboutMe__info {
@@ -194,5 +218,9 @@
 
     .map iframe {
         height: 350px;
+    }
+
+    .works__imgBlock {
+        height: 300px;
     }
 }
